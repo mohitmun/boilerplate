@@ -20,6 +20,9 @@
           %a.page-scroll{:href => "#{@root_url if !current_page?('/')}#contact-section"} Contact
         - if @current_user
           %li= link_to "Sign Out", Rails.application.routes.url_helpers.destroy_user_session_path, method: :delete
+        - else
+          %li= link_to "Sign In", Rails.application.routes.url_helpers.new_user_session_path, method: :delete
+
         %li
           %a.glyphicon.glyphicon-search.fa.fa-search{:href => "#"}
         #DIV_1

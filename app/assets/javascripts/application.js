@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require thredded
+//= require jquery
 //= require bootstrap.min
 //= require owl.carousel.min
 //= require jquery.stellar.min
