@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: positiveatgc
+  pool: 26
+  host: localhost
+  username: mohitmunjani
+  password: baldor123
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: positiveatgc
+  pool: 26
+  host: localhost
+  username: mohitmunjani
+  password: baldor123
