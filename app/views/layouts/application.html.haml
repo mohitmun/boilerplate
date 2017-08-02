@@ -2,6 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    = Gon::Base.render_data
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = csrf_meta_tags
     %meta{:charset => "utf-8"}/
@@ -35,11 +36,6 @@
     .body
       / ========== BEGIN HEADER ==========
       %header#header.header-main
-        / Begin Navbar
-        %div{:style => (current_page?('/') ? "": "margin-bottom: 69px")}
-          = render 'layouts/navbar'
-        / End Navbar
-      / ========= END HEADER =========
       = yield
       = javascript_include_tag 'application', 'data-turbolinks-track' => true
       / Plugins JS
